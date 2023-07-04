@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NJOMZA Media</title> 
+  <style>
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      margin-left: 10px;
+      order: 1; /* Change the order of the image */
+    }
+
+    .logo span {
+      order: 1; /* Change the order of the text */
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    .has-before {
+      font-size: 0.8em;
+    }
+
+  </style>
+  
+
+  
+  
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+      
+
+      <a href="#" class="logo">
+        <span>NJOMZA MEDIA</span>
+        <img src="./assets/images/njm.png" width="120" height="120" loading="lazy" alt="logo" class="logo-img">
+      </a>
+      
+      
+
+      
+
+    
+
+      <nav class="navbar" data-navbar>
+        
+
+        <div class="wrapper">
+          <a href="#" class="logo">Pixology</a>
+
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#service" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <!-- Change Log
+          - Removed Features Tab
+          - Added Project 3
+          - Removed extra project cards
+          - Changed Structure of Projects Section Marginally
+          - Projects Now Link to Appropriate Sources
+          - Changed emoji to more compatible/stable HTML Entity &#128075; NOTE: use &#x1F44B; if first one breaks
+          - Added "n-web.jpeg" and "n-web-2.jpeg" to Services as Popup's
+          - Added small amount of margin to grid-list ( 30px )
+          - Added Popups to portfolio containing expanded project images ( projects 1 - 3 ) [ REMOVED code still there tho ]
+          - Changed popups to tabbed "slideshow-like"
+          -->
+
+          <li class="navbar-item">
+            <a href="#project" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+          
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <a href="#" class="btn btn-primary has-before has-after">Let’s Talk &#128075;</a> <!-- &#x1F44B; other handshake code -->
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">
+              <p>
+                <strong>NJOMZA</strong>
+                <span class="has-before">social media marketing </span>
+              </p>
+
+            </h1>
+
+            <p class="hero-text">
+               Njomza Media offers professional digital marketing and video editing services to ambitious business
+               owners and content creators, helping them transform their ideas into compelling digital strategies and 
+               creative videos for social media platforms. Let go of the overwhelming pressure and focus on growing your business while we handle your digital marketing and video editing needs.
+            </p>
+
+            <div class="wrapper">
+              <a href="#" class="btn btn-primary has-before has-after">How It Works</a>
+
+              <button class="hero-btn" aria-label="pixology promo">
+                <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Behind the scenes</span>
+              </button>
+            </div>
+
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link" style="--color: hsl(241, 77%, 63%);">
+                  <ion-icon name="logo-facebook"></ion-icon>
+
+                  <span class="span">Facebook</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="--color: hsl(0, 100%, 50%);">
+                  <ion-icon name="logo-youtube"></ion-icon>
+
+                  <span class="span">Youtube</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="--color: hsl(203, 89%, 53%);">
+                  <ion-icon name="logo-twitter"></ion-icon>
+
+                  <span class="span">Twitter</span>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="794" height="637" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="service" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle has-before text-center">Our Services</p>
+
+          <h2 class="h2 section-title text-center">Managing you business with our <span class="has-before">best
+              service</span></h2>
+
+          <input type="radio" name="ser-radio" id="ser1" checked style="display: none;">
+          <input type="radio" name="ser-radio" id="ser2" style="display: none;">
+          <input type="radio" name="ser-radio" id="ser3" style="display: none;">
+
+          <ul class="filter-list">
+
+            <li>
+              <label for="ser1" class="filter-btn ser-label1">Service 1</label>
+            </li>
+
+            <li>
+              <label for="ser2" class="filter-btn ser-label2">Service 2</label>
+            </li>
+
+            <li>
+              <label for="ser3" class="filter-btn ser-label3">Service 3</label>
+            </li>
+
+
+          </ul>
+
+          <ul class="ser-list">
+
+            <div class="servs servs1">
+              <li>
+              <div class="service-card" style="--color: 174, 77%, 50%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-1.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Product Management</a>
+                </h3>
+
+              </div>
+            </li>
+              <li>
+              <div class="service-card" style="--color: 267, 76%, 57%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-2.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#popup1" class="card-title">Web & Mobile Development</a>
+                </h3>
+
+                <div id="popup1" class="overlay2">
+                    <div class="popup">
+                        <a class="close" href="#service">&times;</a>
+                        <div class="content">
+                          <img class="flyer" src="assets/images/n-web.jpeg">
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+
+            </li>
+              <div class="drop-area" id="dropArea">
+              <div class="service-card" style="--color: 174, 77%, 50%">
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-1.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Drop Files Here</a>
+                </h3>
+
+              </div>
+            </div>
+            </div>
+            <div class="servs servs2">
+              <li>
+              <div class="service-card" style="--color: 17, 100%, 68%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-3.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Fast Customer Support</a>
+                </h3>
+
+              </div>
+            </li>
+              <li>
+              <div class="service-card" style="--color: 210, 100%, 53%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-5.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Design and Creatives</a>
+                </h3>
+
+              </div>
+            </li>
+            </div>
+            <div class="servs servs3">
+              <li>
+              <div class="service-card" style="--color: 157, 89%, 44%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-6.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#popup2" class="card-title">Marketing and Communication</a>
+                </h3>
+
+                <div id="popup2" class="overlay2">
+                    <div class="popup">
+                        <a class="close" href="#service">&times;</a>
+                        <div class="content">
+                          <img class="flyer2" src="assets/images/n-web-2.jpeg">
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+            </li>
+              <li>
+              <div class="service-card" style="--color: 52, 98%, 50%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-7.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Business Development</a>
+                </h3>
+
+              </div>
+            </li>
+            </div>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+
+      <!-- 
+        - #PROJECT
+      -->
+
+      <section class="section project" id="project" aria-label="project">
+        <div class="container">
+
+          <p class="section-subtitle has-before text-center">Portfolio</p>
+
+          <h2 class="h2 section-title text-center">
+            Our Projects <span class="has-before"></span>
+          </h2>
+
+          <input type="radio" name="project-radio" id="moth" checked style="display: none;">
+          <input type="radio" name="project-radio" id="amer" style="display: none;">
+          <input type="radio" name="project-radio" id="tech" style="display: none;">
+
+          <ul class="filter-list">
+
+
+
+
+            <li>
+<!--              <a href="#popup3"><button class="filter-btn" data-filter-btn>MOTH CLUB</button></a>-->
+              <label for="moth" class="filter-btn moth-label">MOTH CLUB</label>
+
+              <div id="popup3" class="overlay2">
+                  <div class="popup" style="max-width: 1370px;">
+                      <a class="close" href="#project">&times;</a>
+                      <div class="content">
+                        <img class="flyer3" src="assets/images/project-1.jpg">
+                      </div>
+                  </div>
+              </div>
+            </li>
+
+            <li>
+<!--              <a href="#popup4"><button class="filter-btn" data-filter-btn>AMER TUTORING</button></a>-->
+              <label for="amer" class="filter-btn amer-label">AMER TUTORING</label>
+
+              <div id="popup4" class="overlay2">
+                  <div class="popup" style="max-width: 770px;">
+                      <a class="close" href="#project">&times;</a>
+                      <div class="content">
+                        <img class="flyer4" src="assets/images/project-2.jpg">
+                      </div>
+                  </div>
+              </div>
+            </li>
+
+            <li>
+<!--              <a href="#project">-->
+<!--                <button class="filter-btn" onclick=".grid-list {display: none;}" data-filter-btn>TECHNICTTS</button>-->
+<!--              </a>-->
+              <label for="tech" class="filter-btn tech-label">TECHNICTTS</label>
+
+              <div id="popup5" class="overlay2">
+                  <div class="popup" style="max-width: 1420px;">
+                      <a class="close" href="#project">&times;</a>
+                      <div class="content">
+                        <img class="flyer5" src="assets/images/project-3.jpg">
+                      </div>
+                  </div>
+              </div>
+            </li>
+
+           
+          </ul>
+
+          <ul class="grid-list">
+
+            <li class="project1">
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 835; --height: 429;">
+                  <img src="./assets/images/project-1.jpg" width="835" height="429" loading="lazy" alt="Book art design"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="https://www.youtube.com/@themothclub/" class="card-title">Moth Club</a>
+                  </h3>
+
+                  <a href="https://www.youtube.com/@themothclub/" class="card-tag">Youtube</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="project2">
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
+                  <img src="./assets/images/project-2.jpg" width="416" height="429" loading="lazy" alt="Graphic Design"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title" id="testHREF">Graphic Design</a>
+                  </h3>
+
+                  <a href="#" class="card-tag">Design</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="project3">
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 835; --height: 429;">
+                  <img src="./assets/images/project-3.jpg" width="835" height="429" loading="lazy" alt="Book art design"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="https://technictts.com" class="card-title">TECHNICTTS</a>
+                  </h3>
+
+                  <a href="#service" class="card-tag">Web-Dev</a>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section class="section newsletter has-bg-image" aria-label="newsletter"
+        style="background-image: url('./assets/images/newsletter-bg.jpg')">
+        <div class="container">
+
+          <figure class="newsletter-banner">
+            <img src="./assets/images/newsletter-banner.png" width="355" height="356" loading="lazy"
+              alt="newsletter banner" class="w-100">
+          </figure>
+
+          <div class="newsletter-content">
+
+            <p class="section-subtitle has-before">Get every update</p>
+
+            <h2 class="h2 section-title">Subscribe newsletter get latest updates and deals</h2>
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email_address" placeholder="Enter your mail" required class="email-field">
+
+              <button type="submit" class="btn btn-secondary has-before has-after">
+                <span class="span">Subscribe</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+    </article>
+  </main>
+
+
+
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn has-after active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!--
+    - Drag n Drop email code
+  -->
+  <script>
+    var dropArea = document.getElementById('dropArea');
+
+    dropArea.addEventListener('dragover', handleDragOver, false);
+    dropArea.addEventListener('drop', handleFileSelect, false);
+
+    function handleDragOver(event) {
+      event.stopPropagation();
+      event.preventDefault();
+      event.dataTransfer.dropEffect = 'copy';
+    }
+
+    function handleFileSelect(event) {
+      event.stopPropagation();
+      event.preventDefault();
+
+      var files = event.dataTransfer.files;
+
+      // Process the files or send them to the server
+      sendFiles(files);
+    }
+
+    function sendFiles(files) {
+      // You can use AJAX to send the files to the server
+      // and handle the email sending functionality on the server-side using a programming language like PHP.
+      // Here's a basic example using jQuery AJAX:
+
+      var formData = new FormData();
+      for (var i = 0; i < files.length; i++) {
+        formData.append('file[]', files[i]);
+      }
+
+      $.ajax({
+        url: 'assets/php/send-email.php',
+        type: 'POST',
+        data: formData,
+        contentType: false,
+        processData: false,
+        success: function(response) {
+          alert('Email sent successfully!');
+        },
+        error: function() {
+          alert('An error occurred while sending the email.');
+        }
+      });
+    }
+  </script>
+
+</body>
+
+</html>
